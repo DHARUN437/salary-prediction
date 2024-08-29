@@ -1,10 +1,11 @@
 import streamlit as st
 import pickle
+import sklearn
 import numpy as np
 
 
 def load_model():
-    with open('saved_steps.pkl', 'rb') as file:
+    with open(r'saved_steps.pkl', 'rb') as file:
         data = pickle.load(file)
     return data
 
